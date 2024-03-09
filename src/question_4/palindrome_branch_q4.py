@@ -1,9 +1,15 @@
-def isPalindrome(str):
-    # Run loop from 0 to len/2
-    for i in range(0, int(len(str) / 2)):
-        if str[i] != str[len(str) - i - 1]:
-            return False
-    return True
+# function to check string is
+# palindrome or not
+def isPalindrome(s):
+    # Using predefined function to
+    # reverse to string print(s)
+    rev = ''.join(reversed(s))
+
+    # Checking if both string are
+    # equal or not
+    if (s == rev):
+        return True
+    return False
 
 
 # main function
